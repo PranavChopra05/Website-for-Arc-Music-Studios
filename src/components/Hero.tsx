@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import  { motion } from "framer-motion";
+import  type {  Variants } from "framer-motion";
 
 export const Hero = () => {
   const handleScrollToContact = () => {
@@ -9,19 +10,23 @@ export const Hero = () => {
   };
 
   // Variants for heading words (fade + rise from below)
-  const wordVariants = {
+  const wordVariants: Variants = {
     hidden: { opacity: 0, y: 60 },
     visible: (i: number) => ({
       opacity: 1,
       y: 0,
-      transition: { duration: 0.8, delay: i * 0.3, ease: "easeOut" },
+      transition: { 
+        duration: 0.8, 
+        delay: i * 0.3, 
+        ease: [0.25, 0.1, 0.25, 1] // instead of "easeOut"
+      },
     }),
   };
 
   return (
     <div className="relative min-h-screen flex flex-col justify-center items-center bg-brandCardBg bg-cover bg-center overflow-hidden px-4 sm:px-6 md:px-10">
       
-      {/* Gradient Overlay (🔥 fire-like effect) */}
+      {/* Gradient Overlay */}
       <motion.div
         className="absolute inset-0"
         animate={{
