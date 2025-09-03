@@ -7,16 +7,16 @@ interface WorkItem {
 
 const works: WorkItem[] = [
   {
-    title: "Original Track - Midnight Vibes",
-    link: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID1",
+    title: "Original Track - Enthem ",
+    link: "https://www.youtube.com/watch?v=3ZhQxtxhPjs",
   },
   {
-    title: "Beat Production - Trap Energy",
-    link: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID2",
+    title: "Beat Production - Chill Lo-fi",
+    link: "https://www.youtube.com/watch?v=8gw2QeQ5GW4",
   },
   {
-    title: "Mix & Master - Smooth Jazz",
-    link: "https://www.youtube.com/watch?v=YOUR_VIDEO_ID3",
+    title: "Beat Production - Hard Trap",
+    link: "https://www.youtube.com/watch?v=eZMzqFBvgn4",
   },
 ];
 
