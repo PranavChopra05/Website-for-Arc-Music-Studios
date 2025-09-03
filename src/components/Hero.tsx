@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => {
-
   const handleScrollToContact = () => {
     const section = document.getElementById("contact");
     if (section) {
@@ -28,12 +27,35 @@ export const Hero = () => {
 
       {/* Main Heading */}
       <motion.h1
-        initial={{ opacity: 0, y: 80 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="relative z-10 font-heading pb-10 text-5xl md:text-7xl lg:text-8xl text-navText font-black tracking-wide text-center drop-shadow-[0_0_25px_rgba(0,0,0,0.7)]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+        className="relative z-10 font-heading pb-10 text-5xl md:text-7xl lg:text-8xl font-black tracking-wide text-center drop-shadow-[0_0_25px_rgba(0,0,0,0.7)] flex items-center justify-center gap-4"
       >
-        Arcane Music Studios
+        {/* ARC first falls in */}
+        <motion.span
+          initial={{ y: -150, opacity: 0 }}
+          animate={{ y: 0, opacity: 1, x: -40 }} // Arc shifts left
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="inline-block text-navText"
+        >
+          Arc
+        </motion.span>
+
+        {/* MUSIC + STUDIOS revealed like a shutter */}
+        <motion.div className="flex overflow-hidden text-navText">
+          {["Music", "Studios"].map((word, index) => (
+            <motion.span
+              key={word}
+              className="inline-block mr-4"
+              initial={{ y: "100%" }} // start below
+              animate={{ y: 0 }} // slide up into view
+              transition={{ duration: 0.8, delay: 1 + index * 0.3, ease: "easeOut" }}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </motion.div>
       </motion.h1>
 
       {/* Sub-intro words */}
@@ -43,7 +65,7 @@ export const Hero = () => {
             key={word}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1 + index * 0.3 }}
+            transition={{ duration: 0.6, delay: 2 + index * 0.3 }}
             className="hover:scale-110 transition-transform duration-300 cursor-default drop-shadow-[0_0_10px_rgba(0,0,0,0.6)]"
           >
             {word}
@@ -55,7 +77,7 @@ export const Hero = () => {
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 2 }}
+        transition={{ duration: 0.6, delay: 3 }}
         className="relative z-10 mt-14"
       >
         <motion.button

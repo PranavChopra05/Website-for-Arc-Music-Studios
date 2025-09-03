@@ -27,7 +27,7 @@ export const Navbar = () => {
         className="text-2xl font-bold tracking-wide cursor-pointer"
         onClick={() => handleScroll("home")}
       >
-        Arcane
+        Arc
       </div>
 
       {/* Desktop Nav Links */}

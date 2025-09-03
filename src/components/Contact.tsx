@@ -104,7 +104,7 @@ Message: ${formData.message}`;
 
       {/* Trademark */}
       <div className="mt-16 text-center text-sm text-gray-500">
-        © 2025 Arcane Music Studios. All Rights Reserved.
+        © 2025 Arc Music Studios. All Rights Reserved.
       </div>
     </div>
   );
