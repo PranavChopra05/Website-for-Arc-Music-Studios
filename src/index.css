@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #E62727;
+  --color-brandBg: #F3F2EC;
+  --color-brandSecondary: #1E93AB;
+  --color-brandCardBg: #DCDCDC;
+  --color-navText: #272626;
+
+  --font-oswald: "Oswald", sans-serif;
+  --font-heading: "Michroma", sans-serif;
+}
