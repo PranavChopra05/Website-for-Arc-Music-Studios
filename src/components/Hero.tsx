@@ -50,7 +50,7 @@ export const Hero = () => {
                    drop-shadow-[0_0_25px_rgba(0,0,0,0.7)] 
                    flex flex-wrap items-center justify-center gap-2 sm:gap-4"
       >
-        {["Arc", "Music", "Studios"].map((word, i) => (
+        {["Arc", "Music", "Studio"].map((word, i) => (
           <motion.span
             key={word}
             variants={wordVariants}
