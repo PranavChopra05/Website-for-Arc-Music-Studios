@@ -7,16 +7,16 @@ interface WorkItem {
 
 const works: WorkItem[] = [
   {
-    title: "Original Track - Enthem ",
-    link: "https://www.youtube.com/watch?v=3ZhQxtxhPjs",
+    title: "Daal Makhani (Freeverse) - Experimental Trap Song",
+    link: "https://www.youtube.com/watch?v=3VZgTPKzwgM",
   },
   {
-    title: "Beat Production - Chill Lo-fi",
-    link: "https://www.youtube.com/watch?v=8gw2QeQ5GW4",
+    title: "Gumshuda - RnB Lofi Song",
+    link: "https://www.youtube.com/watch?v=w-pt3QYXmqY",
   },
   {
-    title: "Beat Production - Hard Trap",
-    link: "https://www.youtube.com/watch?v=eZMzqFBvgn4",
+    title: "Remind Em - Hard Punjabi Trap Song",
+    link: "https://www.youtube.com/watch?v=b7ef_kciM60",
   },
 ];
 
